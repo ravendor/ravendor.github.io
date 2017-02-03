@@ -1,995 +1,382 @@
 <!DOCTYPE html>
-<!--
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
-Version: 4.5.3
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-    <!--<![endif]-->
-    <!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Sketec</title>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Attendance Monitoring | Home</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-        <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
-        <!-- END GLOBAL MANDATORY STYLES -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
-        <!-- END PAGE LEVEL PLUGINS -->
-        <link href="../assets/pages/css/customize.css" rel="stylesheet" type="text/css" />
-        <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
-        <!-- END THEME GLOBAL STYLES -->
-        <!-- BEGIN THEME LAYOUT STYLES -->
-        <link href="../assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/layouts/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="../assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
-        <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="favicon.ico" /> </head>
-    <!-- END HEAD -->
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <body class="page-container-bg-solid page-boxed page-md">
-      <!-- BEGIN HEADER -->
-      <div class="page-header">
-          <!-- BEGIN HEADER TOP -->
-          <div class="page-header-top">
-              <div class="container customize">
-                  <!-- BEGIN LOGO -->
-                  <div class="page-logo">
-                      <a href="index.html">
-                          <img src="../assets/layouts/layout3/img/SCGPACK_logo2.png"  alt="logo" >
-                      </a>
-                  </div>
-                  <!-- END LOGO -->
-                  <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                  <a href="javascript:;" class="menu-toggler"></a>
-                  <!-- END RESPONSIVE MENU TOGGLER -->
-                  <!-- BEGIN TOP NAVIGATION MENU -->
-                  <div class="top-menu">
-                      <ul class="nav navbar-nav pull-right">
+<!-- Custom CSS -->
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/animate-custom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-                          <li class="droddown dropdown-separator">
-                              <span class="separator"></span>
-                          </li>
+</head>
 
-                          <!-- BEGIN USER LOGIN DROPDOWN -->
-                          <li class="dropdown dropdown-user dropdown-dark">
-                              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                  <!--<img alt="" class="img-circle" src="../assets/layouts/layout3/img/avatar9.jpg">-->
-                                  <span class="username username-hide-mobile">cementhai\john</span>
-                              </a>
-                              <ul class="dropdown-menu dropdown-menu-default">
-                                  <li>
-                                      <a href="page_user_profile_1.html">
-                                          <i class="icon-user"></i> My Profile </a>
-                                  </li>
-
-                                  <li>
-                                      <a href="app_todo_2.html">
-                                          <i class="icon-rocket"></i> My Tasks
-                                          <span class="badge badge-success"> 7 </span>
-                                      </a>
-                                  </li>
-                                  <li class="divider"> </li>
-
-                                  <li>
-                                      <a href="page_user_login_1.html">
-                                          <i class="icon-key"></i> Log Out </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <!-- END USER LOGIN DROPDOWN -->
-                          <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                          <!--<li class="dropdown dropdown-extended quick-sidebar-toggler">
-                              <span class="sr-only">Toggle Quick Sidebar</span>
-                              <i class="icon-logout"></i>
-                          </li>-->
-                          <!-- END QUICK SIDEBAR TOGGLER -->
-                      </ul>
-                  </div>
-                  <!-- END TOP NAVIGATION MENU -->
-              </div>
-          </div>
-          <!-- END HEADER TOP -->
-          <div class="page-header-menu">
-              <div class="container customize">
-                  <!-- BEGIN HEADER SEARCH BOX -->
-                  <!--<form class="search-form" action="page_general_search.html" method="GET">
-                      <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Search" name="query">
-                          <span class="input-group-btn">
-                              <a href="javascript:;" class="btn submit">
-                                  <i class="icon-magnifier"></i>
-                              </a>
-                          </span>
-                      </div>
-                  </form>-->
-                  <!-- END HEADER SEARCH BOX -->
-                  <!-- BEGIN MEGA MENU -->
-                  <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
-                  <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
-                  <div class="hor-menu  ">
-                      <ul class="nav navbar-nav">
-                          <li class="menu-dropdown classic-menu-dropdown active">
-                              <a href="home.html" class="nav-link  ">
-                                <i class="icon-graph"></i> Home
-                              </a>
-                          </li>
-                          <li class="menu-dropdown classic-menu-dropdown ">
-                              <a href="javascript:;">
-                                <i class="icon-list"></i>Attendance Management
-                                  <span class="arrow"></span>
-                              </a>
-                              <ul class="dropdown-menu pull-left">
-                                <li class=" ">
-                                    <a href="create_event.html" class="nav-link  "> Create Event
-                                    </a>
-                                </li>
-                                  <li class=" ">
-                                      <a href="view_event.html" class="nav-link  "> View Event</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="menu-dropdown classic-menu-dropdown ">
-                              <a href="javascript:;">Report<span class="arrow"></span>
-                              </a>
-                              <ul class="dropdown-menu pull-left">
-                                <li class=" ">
-                                    <a href="summary.html" class="nav-link  ">สรุปข้อมูล Event
-                                    </a>
-                                </li>
-                                  <li class=" ">
-                                      <a href="register_form.html" class="nav-link  ">ใบลงทะเบียน</a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class="menu-dropdown classic-menu-dropdown ">
-                              <a href="master_data.html"> Master Data
-                                  <span class="arrow"></span>
-                              </a>
-
-                          </li>
-
-                      </ul>
-                  </div>
-                  <!-- END MEGA MENU -->
-              </div>
-          </div>
-          <!-- END HEADER MENU -->
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<div id="navbar-main"> 
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#home"><img class="img-responsive" src="assets/img/sketec.gif" width="35%" Height="35%" align=""></a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="smoothScroll">Home</a></li>
+          <li> <a href="#about" class="smoothScroll"> About</a></li>
+          <li> <a href="#services" class="smoothScroll"> Services</a></li>
+          <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+          <li> <a href="#team" class="smoothScroll"> Team</a></li>
+          <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+        </ul>
       </div>
-      <!-- END HEADER -->
-      <!-- BEGIN CONTAINER -->
-      <div class="page-container">
-          <!-- BEGIN CONTENT -->
-          <div class="page-content-wrapper">
-              <!-- BEGIN CONTENT BODY -->
-              <!-- BEGIN PAGE HEAD-->
-              <div class="page-head">
-                  <div class="container ">
-                      <!-- BEGIN PAGE TITLE -->
-                      <!--<div class="page-title">
-                          <h1>Form Wizard
-                              <small>form wizard sample</small>
-                          </h1>
-                      </div>-->
-                      <!-- END PAGE TITLE -->
-                      <!-- BEGIN PAGE TOOLBAR -->
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
 
-                      <!-- END PAGE TOOLBAR -->
-                  </div>
+<!-- ==== HEADERWRAP ==== -->
+<div id="headerwrap" name="home">
+  <header class="clearfix">
+    <h1>Design, Development.</h1>
+    <p>Sketch Technology, Sketch the Future.</p>
+    <a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header>
+</div>
+<!-- /headerwrap --> 
+
+<!-- ==== ABOUT ==== -->
+<div id="about" name="about">
+  <div class="container">
+    <div class="row white">
+      <div class="col-md-6"> <img class="img-responsive" src="assets/img/about/about1.jpg" align=""> </div>
+      <div class="col-md-6">
+        <h3>About us</h3>
+        <p></p>
+        <h3>Why choose us?</h3>
+        <p></p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== SERVICES ==== -->
+<div id="services" name="services">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">Our Services</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="large">.</p>
+      </div>
+      <div class="col-lg-6 callout"> <i class="fa fa-desktop fa-3x"></i>
+        <h3>Responsive Design</h3>
+        <p>.</p>
+      </div>
+      <div class="col-lg-6 callout"> <i class="fa fa-gears fa-3x"></i>
+        <h3>Web Development</h3>
+        <p>.</p>
+      </div>
+     
+                
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+
+<!-- ==== PORTFOLIO ==== -->
+<div id="portfolio" name="portfolio">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">Our Portfolio</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">.</p>
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="container">
+      <div class="row"> 
+        
+        <!-- PORTFOLIO IMAGE 1 -->
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        
+        <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+        
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Project Title</h4>
               </div>
-              <!-- END PAGE HEAD-->
-              <!-- BEGIN PAGE CONTENT BODY -->
-              <div class="page-content">
-                  <div class="container customize">
-                      <!-- BEGIN PAGE BREADCRUMBS -->
-                      <!--<ul class="page-breadcrumb breadcrumb">
-                          <li>
-                              <a href="index.html">Home</a>
-                              <i class="fa fa-circle"></i>
-                          </li>
-                          <li>
-                              <a href="#">More</a>
-                              <i class="fa fa-circle"></i>
-                          </li>
-                          <li>
-                              <span>Form Stuff</span>
-                          </li>
-                      </ul>-->
-                      <!-- END PAGE BREADCRUMBS -->
-                        <!-- BEGIN PAGE CONTENT INNER -->
-                        <div class="page-content-inner">
-
-                            <div class="row">
-
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="portlet light ">
-                                        <div class="portlet-title">
-                                            <div class="caption font-green">
-                                                <span class="caption-subject bold uppercase">KPI</span>
-                                                <span class="caption-helper">Event Stat</span>
-                                            </div>
-                                            <div class="actions">
-                                                <div class="btn-group">
-                                                    <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu pull-right">
-                                                        <li>
-                                                            <a href="javascript:;"> Option 1</a>
-                                                        </li>
-                                                        <li class="divider"> </li>
-                                                        <li>
-                                                            <a href="javascript:;">Option 2</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">Option 3</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;">Option 4</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div id="dashboard_amchart_4" class="CSSAnimationChart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light ">
-                                        <div class="portlet-title">
-                                            <div class="caption">
-                                                <i class="icon-share font-blue"></i>
-                                                <span class="caption-subject font-blue bold uppercase">Recent Event</span>
-                                            </div>
-                                            <div class="actions">
-                                                <div class="btn-group">
-                                                    <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Filter By
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
-                                                        <label>
-                                                            <input type="checkbox" /> Finance</label>
-                                                        <label>
-                                                            <input type="checkbox" checked="" /> Membership</label>
-                                                        <label>
-                                                            <input type="checkbox" /> Customer Support</label>
-                                                        <label>
-                                                            <input type="checkbox" checked="" /> HR</label>
-                                                        <label>
-                                                            <input type="checkbox" /> System</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
-                                                <ul class="feeds">
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-info">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 4 pending tasks.
-                                                                        <span class="label label-sm label-warning "> Take action
-                                                                            <i class="fa fa-share"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> Just now </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <div class="col1">
-                                                                <div class="cont">
-                                                                    <div class="cont-col1">
-                                                                        <div class="label label-sm label-success">
-                                                                            <i class="fa fa-bar-chart-o"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="cont-col2">
-                                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col2">
-                                                                <div class="date"> 20 mins </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-danger">
-                                                                        <i class="fa fa-user"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 24 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-info">
-                                                                        <i class="fa fa-shopping-cart"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> New order received with
-                                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 30 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-success">
-                                                                        <i class="fa fa-user"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 24 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-default">
-                                                                        <i class="fa fa-bell-o"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> Web server hardware needs to be upgraded.
-                                                                        <span class="label label-sm label-default "> Overdue </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 2 hours </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <div class="col1">
-                                                                <div class="cont">
-                                                                    <div class="cont-col1">
-                                                                        <div class="label label-sm label-default">
-                                                                            <i class="fa fa-briefcase"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="cont-col2">
-                                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col2">
-                                                                <div class="date"> 20 mins </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-info">
-                                                                        <i class="fa fa-check"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 4 pending tasks.
-                                                                        <span class="label label-sm label-warning "> Take action
-                                                                            <i class="fa fa-share"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> Just now </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <div class="col1">
-                                                                <div class="cont">
-                                                                    <div class="cont-col1">
-                                                                        <div class="label label-sm label-danger">
-                                                                            <i class="fa fa-bar-chart-o"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="cont-col2">
-                                                                        <div class="desc"> Finance Report for year 2013 has been released. </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col2">
-                                                                <div class="date"> 20 mins </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-default">
-                                                                        <i class="fa fa-user"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 24 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-info">
-                                                                        <i class="fa fa-shopping-cart"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> New order received with
-                                                                        <span class="label label-sm label-success"> Reference Number: DR23923 </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 30 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-success">
-                                                                        <i class="fa fa-user"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 24 mins </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col1">
-                                                                    <div class="label label-sm label-warning">
-                                                                        <i class="fa fa-bell-o"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cont-col2">
-                                                                    <div class="desc"> Web server hardware needs to be upgraded.
-                                                                        <span class="label label-sm label-default "> Overdue </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 2 hours </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <div class="col1">
-                                                                <div class="cont">
-                                                                    <div class="cont-col1">
-                                                                        <div class="label label-sm label-info">
-                                                                            <i class="fa fa-briefcase"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="cont-col2">
-                                                                        <div class="desc"> IPO Report for year 2013 has been released. </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col2">
-                                                                <div class="date"> 20 mins </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="scroller-footer">
-                                                <div class="btn-arrow-link pull-right">
-                                                    <a href="javascript:;">See All Records</a>
-                                                    <i class="icon-arrow-right"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="portlet light tasks-widget ">
-                                        <div class="portlet-title">
-                                            <div class="caption">
-                                                <i class="icon-share font-green-haze hide"></i>
-                                                <span class="caption-subject font-green bold uppercase">Tracking</span>
-                                                <span class="caption-helper">Status summary...</span>
-                                            </div>
-                                            <div class="actions">
-                                                <div class="btn-group">
-                                                    <a class="btn green btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> More
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu pull-right">
-                                                        <li>
-                                                            <a href="javascript:;"> All Project </a>
-                                                        </li>
-                                                        <li class="divider"> </li>
-                                                        <li>
-                                                            <a href="javascript:;"> AirAsia </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;"> Cruise </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;"> HSBC </a>
-                                                        </li>
-                                                        <li class="divider"> </li>
-                                                        <li>
-                                                            <a href="javascript:;"> Pending
-                                                                <span class="badge badge-danger"> 4 </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;"> Completed
-                                                                <span class="badge badge-success"> 12 </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="javascript:;"> Overdue
-                                                                <span class="badge badge-warning"> 9 </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title=""> </a>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="task-content">
-                                                <div class="scroller" style="height: 312px;" data-always-visible="1" data-rail-visible1="1">
-                                                    <!-- START TASK LIST -->
-                                                    <ul class="task-list">
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Present 2013 Year IPO Statistics at Board Meeting </span>
-                                                                <span class="label label-sm label-success">Company</span>
-                                                                <span class="task-bell">
-                                                                    <i class="fa fa-bell-o"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Hold An Interview for Marketing Manager Position </span>
-                                                                <span class="label label-sm label-danger">Marketing</span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> AirAsia Intranet System Project Internal Meeting </span>
-                                                                <span class="label label-sm label-success">AirAsia</span>
-                                                                <span class="task-bell">
-                                                                    <i class="fa fa-bell-o"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Technical Management Meeting </span>
-                                                                <span class="label label-sm label-warning">Company</span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Kick-off Company CRM Mobile App Development </span>
-                                                                <span class="label label-sm label-info">Internal Products</span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Prepare Commercial Offer For SmartVision Website Rewamp </span>
-                                                                <span class="label label-sm label-danger">SmartVision</span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Sign-Off The Comercial Agreement With AutoSmart </span>
-                                                                <span class="label label-sm label-default">AutoSmart</span>
-                                                                <span class="task-bell">
-                                                                    <i class="fa fa-bell-o"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group dropup">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> Company Staff Meeting </span>
-                                                                <span class="label label-sm label-success">Cruise</span>
-                                                                <span class="task-bell">
-                                                                    <i class="fa fa-bell-o"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group dropup">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="last-line">
-                                                            <div class="task-checkbox">
-                                                                <input type="checkbox" class="liChild" value="" /> </div>
-                                                            <div class="task-title">
-                                                                <span class="task-title-sp"> KeenThemes Investment Discussion </span>
-                                                                <span class="label label-sm label-warning">KeenThemes </span>
-                                                            </div>
-                                                            <div class="task-config">
-                                                                <div class="task-config-btn btn-group dropup">
-                                                                    <a class="btn btn-sm default" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                                                        <i class="fa fa-cog"></i>
-                                                                        <i class="fa fa-angle-down"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu pull-right">
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-check"></i> Complete </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-pencil"></i> Edit </a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:;">
-                                                                                <i class="fa fa-trash-o"></i> Cancel </a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- END START TASK LIST -->
-                                                </div>
-                                            </div>
-                                            <div class="task-footer">
-                                                <div class="btn-arrow-link pull-right">
-                                                    <a href="javascript:;">See All Records</a>
-                                                    <i class="icon-arrow-right"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PAGE CONTENT INNER -->
-                    </div>
-                </div>
-                <!-- END PAGE CONTENT BODY -->
-                <!-- END CONTENT BODY -->
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/folio01-preview.jpg" alt=""></p>
+                <p>.</p>
+                <p><b><a href="#">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
             </div>
-            <!-- END CONTENT -->
-
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
         </div>
-        <!-- END CONTAINER -->
-        <!-- BEGIN FOOTER -->
-
-        <div class="scroll-to-top">
-            <i class="icon-arrow-up"></i>
+        <!-- /.modal --> 
+        
+        <!-- PORTFOLIO IMAGE 2 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
+              <figcaption>
+                <h5>CONCEPT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
         </div>
-        <!-- END INNER FOOTER -->
-        <!-- END FOOTER -->
-        <!--[if lt IE 9]>
-<script src="../assets/global/plugins/respond.min.js"></script>
-<script src="../assets/global/plugins/excanvas.min.js"></script>
-<![endif]-->
-        <!-- BEGIN CORE PLUGINS -->
-        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-        <!-- END CORE PLUGINS -->
-        <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
-        <!-- END PAGE LEVEL PLUGINS -->
-        <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
-        <!-- END THEME GLOBAL SCRIPTS -->
-        <!-- BEGIN PAGE LEVEL SCRIPTS -->
-        <script src="../assets/pages/scripts/dashboard.js" type="text/javascript"></script>
-        <!-- END PAGE LEVEL SCRIPTS -->
-        <!-- BEGIN THEME LAYOUT SCRIPTS -->
-        <script src="../assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
-        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-        <!-- END THEME LAYOUT SCRIPTS -->
-    </body>
+        
+        <!-- PORTFOLIO IMAGE 3 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
+              <figcaption>
+                <h5>MOBILE UI KIT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+      </div>
+      <!-- /row --> 
+      
+      <!-- PORTFOLIO IMAGE 4 -->
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
+              <figcaption>
+                <h5>CONCEPT</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 5 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
+              <figcaption>
+                <h5>CMS INTEGRATION</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        <!-- /col --> 
+      </div>
+      <!-- /row --> 
+            <!-- PORTFOLIO IMAGE 7 -->
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio07.jpg" alt="">
+              <figcaption>
+                <h5>MOCKUP</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 8 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio08.jpg" alt="">
+              <figcaption>
+                <h5>WEB ICONS</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 9 -->
+        <div class="col-md-4">
+          <div class="grid mask">
+            <figure> <img class="img-responsive" src="assets/img/portfolio/folio09.jpg" alt="">
+              <figcaption>
+                <h5>UX / UI</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-mask --> 
+        </div>
+        <!-- /col --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /row --> 
+  </div>
+</div>
+<!-- /container --> 
 
+<!-- ==== TEAM MEMBERS ==== -->
+<div id="team" name="team">
+  <div class="container">
+    <div class="row centered">
+      <h2 class="centered">Meet Our Team</h2>
+      <hr>
+      <div class="col-lg-4 centered"> <img class="img img-circle" src="assets/img/team/team1.jpg" height="120px" width="120px" alt="">
+        <h4>Kitipat V.</h4>
+        <p></p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-4 centered"> <img class="img img-circle" src="assets/img/team/team2.jpg" height="120px" width="120px" alt="">
+        <h4>Rittichai H.</h4>
+        <p></p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-4 centered"> <img class="img img-circle" src="assets/img/team/team3.jpg" height="120px" width="120px" alt="">
+        <h4>Parinya K.</h4>
+        <p></p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">.</p>
+      </div>
+    </div>
+  </div>
+  <!-- row --> 
+</div>
+<!-- container --> 
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" name="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">Contact Us</h2>
+      <hr>
+      <div class="col-md-4 centered"> <i class="fa fa-map-marker fa-2x"></i>
+        <p>101 Lardpao<br>
+          Lardpao, Bangkok 10170</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+        <p>info@sketec.herobo.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+        <p> +66 81 375 5572</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p>.</p>
+        <form id="contact" method="post" class="form" role="form">
+          <div class="row">
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+            </div>
+            <div class="col-xs-6 col-md-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+          </div>
+          <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <button class="btn btn btn-lg" type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+        <!-- form --> 
+      </div>
+    </div>
+    <!-- row --> 
+    
+  </div>
+</div>
+<!-- container -->
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Sketec. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/retina.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
 </html>
